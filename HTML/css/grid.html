@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anything{
+            display: grid;
+            /* dclare the container: as grid display; */
+            grid-template-columns: repeat(2,1fr);
+            /* repeat(No of columns, size of each coulmn) - not more tha 12 columns */
+            grid-gap: 40px;
+            
+           
+            
+        }
+
+        .item{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            padding: 20px;
+           width: 250px;
+            text-align: center;
+            color: black;
+            border: 1px solid brown;
+            height: 150px;
+            
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Flex - For one dimensional layout : 1 row or 1 column -->
+     <div class="anything">
+        <div class="item">CAKES<br>
+            <img src="./photo-1675062521067-7c130e5b5a1c.avif" height="100px" width="100px">
+        </div>
+        <div class="item">Price
+            <p>Price:$50</p>
+        </div>
+
+        <div class="item">COOKIES<br>
+            <img src="./photo-1691480162735-9b91238080f6.avif"  height="100px" width="100px">
+        </div>
+         <div class="item">Price
+            <p>Price:$20</p>
+        </div>
+
+
+        <div class="item">PASTRY<br>
+            <img src="./photo-1691148682414-3a204c8757af.avif" height="100px" width="100px">
+        </div>
+         <div class="item">Price
+            <p>Price:$70</p>
+        </div>
+     </div>
+</body>
+</html>

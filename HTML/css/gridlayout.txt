@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+      <!-- static(default) placed one after one :Nothing changes -->
+    <div style="position: static;">First 1</div>
+    <div style="position: static;">Second 2</div>
+    <div>I am also static</div>
+
+
+    <!-- 2.Relative: Move the Element/Tag in all direction:Top,bottom,left,right -->
+     <div style="position: relative; left: 50px; top: 50px; background-color: white; border: 2px solid brown;">
+        I have moved from left:50px and from top : 50px
+     </div>
+
+     <div style="position: relative; right: 50px; bottom: ;: 50px; background-color: white; border: 2px solid brown;">
+        I have moved from right:50px and from bottom : 50px
+     </div>
+
+
+     <!-- 3. Abosulte 
+        child:abosulte
+         parent:realtive    
+     -->
+      <!-- <div style="position: relative; background-color: lightcoral; height: 100px;">P
+
+        <div style="position: absolute; top:20px; left: 150px; background-color: brown;">I am abosulte</div>
+
+        <div style="position: absolute; bottom: 20px; right:10px; background-color: blue;">I am absoulte too</div>
+
+      </div> -->
+
+      <!-- 4.FIXED : FIX THE POSTION NEVER CHNAGE -->
+       <!-- <div style="position: fixed; top:0; left: 0; background-color: blueviolet; width: 100%;">
+        I am FIXED to this position
+       </div>
+
+       <div style="height: 1500px; background-color: lightgreen;"></div> -->
+
+
+
+       <!-- 5.Sticky: Combination of relative and fixed,IT act likes like realtive until 
+       it reach to specific postion it will be fixed -->
+       <div style="position: sticky; top:0;  background-color: blueviolet; width: 100%; padding: 10px;">
+        I will stick to the top when I react at top:0
+       </div>
+
+       <div style="height: 1500px; background-color: lightgreen;"></div>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anything{
+            display: grid;
+            /* dclare the container: as grid display; */
+            grid-template-columns: repeat(2,1fr);
+            /* repeat(No of columns, size of each coulmn) - not more tha 12 columns */
+            grid-gap: 40px;
+            
+           
+            
+        }
+
+        .item{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            padding: 20px;
+           width: 250px;
+            text-align: center;
+            color: black;
+            border: 1px solid brown;
+            height: 150px;
+            
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Flex - For one dimensional layout : 1 row or 1 column -->
+     <div class="anything">
+        <div class="item">CAKES<br>
+            <img src="./photo-1675062521067-7c130e5b5a1c.avif" height="100px" width="100px">
+        </div>
+        <div class="item">Price
+            <p>Price:$50</p>
+        </div>
+
+        <div class="item">COOKIES<br>
+            <img src="./photo-1691480162735-9b91238080f6.avif"  height="100px" width="100px">
+        </div>
+         <div class="item">Price
+            <p>Price:$20</p>
+        </div>
+
+
+        <div class="item">PASTRY<br>
+            <img src="./photo-1691148682414-3a204c8757af.avif" height="100px" width="100px">
+        </div>
+         <div class="item">Price
+            <p>Price:$70</p>
+        </div>
+     </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anything{
+             display: flex;
+            /* declare the div as flexible by default row format */
+            justify-content: space-between;
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            flex-direction: row-reverse;
+            
+        }
+
+        .item{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            color: black;
+            flex: 1;
+            height: 200px;
+            transition: 0.3s ease-in-out;
+           
+        }
+
+        .item:hover{
+            background-color: darkkhaki;
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Flex - For one dimensional layout : 1 row or 1 column -->
+     <div class="anything">
+        <div class="item">CAKES<br>
+            <img src="./photo-1675062521067-7c130e5b5a1c.avif" height="100px" width="100px">
+            <p>Price: $50</p>
+        </div>
+        <div class="item">COOKIES<br>
+            <img src="./photo-1691480162735-9b91238080f6.avif"  height="100px" width="100px">
+            <p>Price: $50</p>
+        </div>
+        <div class="item">PASTRY<br>
+            <img src="./photo-1691148682414-3a204c8757af.avif" height="100px" width="100px">
+            <p>Price: $50</p>
+        </div>
+     </div>
+</body>
+</html>

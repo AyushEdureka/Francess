@@ -1,0 +1,128 @@
+ Ordered List -->
+
+       <ol type="1">
+        <li>Career</li>
+        <li>Contact</li>
+        <li>Support</li>
+       </ol>
+
+       <!-- Unordered List -->
+        <ul type="circle" >
+          <li>Movies</li>
+          <li>Anime</li>
+          <li>Ott</li>
+          <li>Kids</li>
+        </ul>
+
+        <!-- Definition List -->
+        <dl style="text-align: center;">
+          <dt>Netflix</dt>
+          <!-- defintion Title -->
+           <dd>It is an Online OTT Platform</dd>
+           <!-- Definition data -->
+        </dl> 
+
+        <!-- Anchor Tag
+        Link one webpage to another weboage directly 
+        href: address where you want to link
+         -->
+        <a href="https://www.youtube.com/results?search_query=minecraft">Youtube</a>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+           <ul type="none">
+               <li><a href="">Home</a></li>
+               <li><a href="">Todays Deal</a></li>
+           </ul>
+        </nav>
+
+    </header>
+
+    <main>
+      <section style="background-color: bisque;">
+       <h3>Visit My blog</h3>
+       <p>For more Information follow me</p>
+      </section>
+
+      <div style="background-color: beige;">
+        <h3>Visit My blog</h3>
+        <p>For more Information follow me</p>
+      </div>
+
+    </main>
+
+    <footer style="background-color: aqua;">
+         <dl>
+            <dt>HTML</dt>
+            <dd>HYPER TEXT MARKUP LANGUAGE</dd>
+         </dl>
+    </footer>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Choose:<input list="Food">
+
+    <datalist id="Food">
+        <option value="Veg">
+        <option value="NoN -Veg">
+        <option value="Vegan">
+    </datalist>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- AUDIO _ MP3 -->
+    <audio controls>
+        <source src="./mp3.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Video- MP4 -->
+     <video controls height="250" width="250">
+        <source src="../html5/vedio.mp4.mp4" type="video/mp4">
+     </video>
+</body>
+</html>
+
+
+
+
+ Country:<input list="country">
+
+    <datalist id="country">
+        <option value="Canada">
+         <option value="India"></option>
+         <option value="USA"></option>    
+         <option value="Russia">
+    </datalist>

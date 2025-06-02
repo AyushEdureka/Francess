@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- // https://youtu.be/I7rCUkEvkQ4?feature=shared -->
+
+    <!-- <iframe width="360" height="300" src="https://www.youtube.com/embed/I7rCUkEvkQ4" title="Me vs Grandma Cooking Challenge | Funny Kitchen War by Multi DO Challenge" frameborder="0"  allowfullscreen></iframe> -->
+
+    <h1>My response Autoplay video- YOUTUBe</h1>
+
+    <!-- <iframe width="990" height="557" src="https://www.youtube.com/embed/MLD-zrjEMNs" title="Poor Vs Rich Vs Giga Rich Girls At Birthday Party! - Funny Stories About Baby Doll" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+    <!-- customise the video  -->
+     <iframe
+     src="https://www.youtube.com/embed/MLD-zrjEMNs?autoplay=1&mute=1&controls=1"
+     allow="autoplay; encrypted-media"
+     allowfullscreen>
+
+     </iframe>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- INLINE - IN THE SAME LINE OR TAG/ELEMENT -->
+     <h1 style="color: blue; font-family: cursive;" >This is HTML</h1>
+     <p style="color: white; background-color: red;" >This is Paragraph</p>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+          color: brown;
+          text-align: center;  
+        }
+
+        p{
+            color: blue;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- INTERNAL CSS - Under style tag inside the head tag -->
+     <h1>This is heading</h1>
+     <p>Hello how are you?</p>
+     <p>This is second paragraph</p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #Francess{
+        color: blue;
+        text-align: center;
+       }
+
+       #Myp{
+        color: red;
+        text-align: center;
+       }
+
+       /* ID is selected with # symbol */
+    </style>
+
+</head>
+<body>
+
+    <h1 id="Francess">This is heading 1</h1>
+    <p>This is para 1</p>
+    <p id="Myp">This is para 2</p>
+    <p>This is para 3</p>
+    <h1>This is heading 2</h1>
+
+
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fullstack{
+            background-color: yellow;
+        }
+       
+
+       /* class is selected with . symbol */
+    </style>
+
+</head>
+<body>
+
+    <h1 id="Myh" class="New">This is heading 1</h1>
+    <p>This is para 1</p>
+    <p class="fullstack">This is para 2</p>
+    <p class="fullstack">This is para 3</p>
+    <h1>This is heading 2</h1>
+    <h1 class="fullstack">This is heading 3</h1>
+
+
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fullstack{
+            background-color: yellow;
+        }
+       
+       *{
+        font-family: cursive;
+        color: blue;
+       }
+
+        /* universal - * */
+    </style>
+
+</head>
+<body>
+
+    <h1 id="Myh" class="New">This is heading 1</h1>
+    <p>This is para 1</p>
+    <p class="fullstack">This is para 2</p>
+    <p class="fullstack">This is para 3</p>
+    <h1>This is heading 2</h1>
+    <h1 class="fullstack">This is heading 3</h1>
+
+
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p,#Myh,.Hello{
+           text-align: center;
+           color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="Myh" class="New">This is heading 1</h1>
+    <p>This is para 1</p>
+    <p class="fullstack">This is para 2</p>
+    <p class="fullstack">This is para 3</p>
+    <h1>This is heading 2</h1>
+    <h1 class="Hello">This is heading 3</h1>
+
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+            line-height: 1.6;
+            color: white;
+        }
+
+        body{
+            background-image: url('./istockphoto-1560594282-612x612.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header{
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+           /* // margin: 20px; */
+            margin-bottom: 20px;
+        }
+
+
+        section{
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.8) ;
+            border-radius: 10px;
+        }
+
+
+       
+    </style>
+</head>
+<body>
+     
+     <header>
+        <h1>Welcome to My Kitchen</h1>
+     </header>
+
+     <section>
+        <p>Order Food Anytime , Anywhere</p>
+        <p> Taste of Real Home Food</p>
+        <p>Contact us at : xyz@gmail.com</p>
+    </section>
+ 
+
+</body>
+</html>
+
+
+
+
+
+h1{
+    color: red;
+    text-align: right;
+}
+
+div{
+    background-color: burlywood;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+}
+
+div p{
+    color: blue;
+}
+
+div button{
+    cursor: pointer;
+    background-color: red;
+}
+
+div button:hover{
+    background-color: blue;
+    color: white;
+}

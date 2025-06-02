@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anything{
+             display: flex;
+            /* declare the div as flexible by default row format */
+            justify-content: space-between;
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            flex-direction: row-reverse;
+            
+        }
+
+        .item{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            color: black;
+            flex: 1;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex - For one dimensional layout : 1 row or 1 column -->
+     <div class="anything">
+        <div class="item">CAKES<br>
+            <img src="./photo-1675062521067-7c130e5b5a1c.avif" height="100px" width="100px">
+            <p>Price: $50</p>
+        </div>
+        <div class="item">COOKIES<br>
+            <img src="./photo-1691480162735-9b91238080f6.avif"  height="100px" width="100px">
+            <p>Price: $50</p>
+        </div>
+        <div class="item">PASTRY<br>
+            <img src="./photo-1691148682414-3a204c8757af.avif" height="100px" width="100px">
+            <p>Price: $50</p>
+        </div>
+     </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     p{
+        color: red;
+     }
+
+     p.ex1{
+        display: none;
+     }
+
+     p.ex2{
+        display: block;
+        background-color:bisque;
+     }
+
+      p.ex3{
+        display: inline;
+        background-color:bisque;
+     }
+
+
+   </style>
+</head>
+<body>
+    <h1>Display Property</h1>
+
+    <h2>Display : None</h2>
+    <div>
+        Here the display is none so it will be hidden <p class="ex1">Hello How are you?</p>
+    </div>
+
+
+     <h2>Display : Block(div 100%width)</h2>
+    <div>
+        it is acting like a div container takes 100% width <p class="ex2">Hello display block</p>
+        you can adjust height and width 
+    </div>
+
+
+     <h2>Display : Inline</h2>
+    <div>
+        it is acting like a span tag takes only required amount of width <p class="ex3">Hello display span</p>just like span tag
+    
+    </div>
+
+
+</body>
+</html>

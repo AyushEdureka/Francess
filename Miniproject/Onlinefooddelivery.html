@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Step 1: Define food items
+        let pizza = {name:"Pizza"  , price:200};
+        let burger ={name:"Burger"  ,price:100};
+        let pasta = {name:"Pasta"  , price:150};
+
+        //Step 2 : Customer Order(Array)
+            let cart = [pizza,burger,pasta]
+
+        //Step 3: Calculate the total Price   : ObjectName.KeyName : Value
+        let totalPrice =  pizza.price + burger.price + pasta.price  
+        
+        console.log("Total Bill" + totalPrice)
+
+        //Step 4: Apply Disount
+
+        let isMemberUser = true; //Boolean
+        let discount = 0
+
+         if(totalPrice > 300  && isMemberUser){  
+            discount = totalPrice * 0.2
+            console.log("Coupon COde Apllied:20%")
+        }else{
+            console.log("No discount")
+        }
+
+        //STep 5:Print Final Bill
+        let finalPrice = totalPrice - discount
+        console.log("Bill to be paid " + finalPrice)
+    </script>
+</body>
+</html>
