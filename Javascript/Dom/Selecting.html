@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myP">Hello Francess</p>
+
+    <div>Hii i am first div</div>      
+    <div>Hii i am second div</div>
+
+    <h1 class="myCLass">Heading 1</h1>
+    <h2 class="myCLass">Heading 2</h2>
+    <p  class="myCLass">Documne Object Model</p>
+
+    <p id="Book">Book of HTML</p>
+
+
+    <script>
+        //Logical Part
+        //textContent: It is use to print Text Content of the Tag
+
+        // 1. TagName
+        const abc   =  document.getElementsByTagName("div")
+        console.log(abc[1].textContent)
+
+
+        //2. Id 
+        const paragraph  =  document.getElementById("myP")
+        console.log(paragraph.textContent)
+
+
+        //3. ClassName
+         
+         const Group =  document.getElementsByClassName("myCLass")
+         console.log(Group);   // It Will Store the data in the form of ARRAY
+
+         console.log(Group[1].textContent)
+         console.log(Group[2].textContent)
+
+
+
+         //4. querySelector  : CSS rules #idname  , .className
+
+        const box  =    document.querySelector("#Book")
+        console.log(box)
+
+
+    </script>
+</body>
+</html>
