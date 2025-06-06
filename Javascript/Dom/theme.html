@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: black;
+        }
+
+        button{
+            border-radius: 10px;
+            margin: 10px;
+            height: 30px;
+        }
+
+        marquee{
+            font-size: 25px;
+            font-weight: bold;
+            background-color: darkred;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myH">Theme Change</h1>
+    <p><strong>Click a button to change the theme of website</strong></p>
+
+    <button id="redButton" onclick="containerred()">Red-Theme</button>
+
+    <button id="blueButton" onclick="conatinerblue()">Blue-Theme</button>
+
+    <button id="greenButton" onclick="conatinergreen()">Green-Theme</button>
+
+    <marquee>CLICK CLICK CLICK</marquee>
+
+
+    <script>
+   //Select the button
+      const redButton  =      document.getElementById("redButton")  
+      const blueButton  =      document.getElementById("blueButton")
+      const greenButton =      document.getElementById("greenButton")
+      const heading     =      document.getElementById("myH")
+
+
+      function containerred(){
+           document.body.style.backgroundColor='red'
+      }
+       
+      function conatinerblue(){
+        document.body.style.backgroundColor='blue'
+      }
+
+      function conatinergreen(){
+        document.body.style.backgroundColor='green'
+      }
+
+
+
+
+
+    </script>
+</body>
+</html>
