@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            overflow:auto;
+        }
+
+        .content{
+            height: 300px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Welcome</h1>
+    <p>Some text</p>
+    <button id="mybutton">Click me</button>
+
+    <input id="myinput" placeholder="Type something">
+
+    <div id="mydiv">
+        <div class="content">Scroll inside</div>
+    </div>
+
+    <script>
+        //1. Select The Elements:
+      const button   = document.getElementById("mybutton")
+      const input    =  document.getElementById("myinput")
+      const div      =      document.getElementById("mydiv")
+
+      //2. DEFINE THE FUCNTION TO DO THE TASK
+      function handle(){
+        alert('Button is clicked')
+      }
+
+      //3. Handling Events
+      //Synatx: ElementSelected.addEventListner('Type of Event' , Call the function)
+      button.addEventListener('click',handle)
+
+
+      function handleMouseOver(){
+       const div =  document.getElementById('mydiv')
+       div.style.backgroundColor = 'brown'
+      }
+      div.addEventListener('mouseover',handleMouseOver)
+
+
+      function handleMouseOut(){
+       const div =  document.getElementById("mydiv")
+       div.style.backgroundColor = 'yellow';
+      }
+      div.addEventListener('mouseout',handleMouseOut)
+
+
+      function handleKeyPress(event){
+           console.log('Key Press :'  + event.key)
+      }
+      input.addEventListener('keypress',handleKeyPress)
+
+
+
+    </script>
+</body>
+</html>
