@@ -1,0 +1,32 @@
+1. Click on folder 
+2. open backend folder on terminal
+\Backend>  node server.js (Command to start backend)
+
+
+//Start The frontend
+
+\Frontend>  npm run dev
+
+--> Click on Local host Link to start the website
+
+
+Steps to Explain
+1.Go Register dummby Data
+
+--> Website is responsive as per the Backend Logic
+--> Method POST is used to Send Data to Backend
+
+2. Like wise go to all Options in Navigtion bar and tell them
+
+
+(server.js---> Line no 27)
+3. Database : Database Name:foodD 
+              3 Types of data (User,Order,Restraunt)
+
+       
+
+4. For Frontend  we are using React + Vite
+to make the performance very fast with different components(file)
+
+
+           

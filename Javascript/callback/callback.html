@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //callback is function and that is passed in Another Main function as Parameter
+  
+          
+        //Main Task
+        function doHomework(subject,callback){
+
+            console.log('Doing Homwork :' + subject)
+              callback() ; 
+        }
+       doHomework('Math',function(){
+        console.log("Home wrk finished")
+       })
+
+
+       //
+       function greet(name,callback){
+                 console.log("Hii Good Morning " + name);  //After greeting now Callback function
+           callback()      
+       }
+       greet("Francess",function(){
+         console.log("Joining Session")
+       })
+
+
+        </script>
+</body>
+</html>

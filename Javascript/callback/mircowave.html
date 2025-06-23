@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // setTimeout(function(){
+        //     console.log("Hiii ")
+        // },2000)
+
+        // //To set Timer to function
+
+        //Example: Bake cookies and do any other task as well
+
+        function setTimer(callback){   //step1:
+            console.log("Baking cookies in oven..");
+
+
+            //step2: wait for 5-10 min till it baked
+            setTimeout(function(){
+                console.log("Cookies are ready!")
+                callback();
+            },10000)
+
+        }
+        
+         function taskeOutCookies(){  //step 3
+            console.log("Taking cookies out of oven")
+        }
+
+        setTimer(taskeOutCookies);
+
+
+        function DoHomework(subject){
+            console.log("Doing Homewokr " + subject)
+        }
+        DoHomework("Math")
+    </script>
+</body>
+</html>
