@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //fetch - keyword given by js to fetch data from API
+
+        fetch("http://randomuser.me/api")
+
+        .then(response => response.json())  //step always convert the respons into json format
+        .then(data=> console.log(data.results))
+
+        .catch(error=>console.log("Error :", error))
+
+    </script>
+</body>
+</html>

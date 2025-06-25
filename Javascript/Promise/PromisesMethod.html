@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let order1 = new Promise((resolve,reject)=>{
+             
+             setTimeout(resolve,3000,"Pizza From Shop1 - dominos")
+        })
+
+          let order2 = new Promise((resolve,reject)=>{
+             
+             setTimeout(reject,5000,"Pizza From Shop2 - Bik Oven")
+        })
+
+
+          let order3 = new Promise((resolve,reject)=>{
+             
+             setTimeout(reject,1500,"Pizza From Shop1 - Pizza hut")
+        })
+
+
+        //Promise.all
+
+        // Promise.all([order1,order2,order3])
+
+        // .then((pizza)=>{
+        //     console.log("All pizza arrived")
+        // })
+
+        // .catch((error)=>{
+        //     console.log("One pizza failed")
+        // })
+
+        //Promise.allsettled:
+
+        Promise.allSettled([order1,order2,order3])
+
+        .then((result)=>{
+            console.log("all ordeer finsihed")
+        })
+    </script>
+</body>
+</html>
